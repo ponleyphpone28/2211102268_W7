@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    background: white;
+    padding: 25px;
+    max-width: 900px;
+    max-height: 2000px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .info-box {
+    display: inline-block;
+    background-color: #8e44ad;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-weight: bold;
+    width: fit-content; /* Menggunakan fit-content untuk menyesuaikan dengan teks */
+    min-width: unset; /* Hapus lebar minimum */
+    max-width: unset; /* Hapus lebar maksimum */
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #8e44ad;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    width: fit-content; /* Menggunakan fit-content */
+  }
+  
+  .color-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .color-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content; /* Menggunakan fit-content untuk setiap tombol */
+    min-width: 80px; /* Minimal sedikit lebih lebar */
+    align-self: center; /* Pusatkan tombol */
+  }
+  
+  .merah { background-color: #e74c3c; }
+  .kuning { background-color: #f1c40f; color: black; }
+  .hijau { background-color: #2ecc71; }
+  .biru { background-color: #3498db; }
+  
+  /* Modal */
+  .modal {
+    position: fixed;
+    top: 0; left: 0;
+    height: 100vh; width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    text-align: left;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  #modal-toggle:checked ~ .modal {
+    display: flex;
+  }
